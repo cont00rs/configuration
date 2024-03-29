@@ -1,0 +1,8 @@
+[includeIf "gitdir:~/cont00rs/**"]
+        path = ~/.config/git/cont00rs-github
+[core]
+        editor = vim
+[init]
+        defaultBranch = main
+[pull]
+        rebase = true
