@@ -60,8 +60,6 @@ set wildignore=*.o,*.swp,*.mod
 " Color specifications
 " --------------------
 set background=dark
-set cursorline
-set cursorlineopt=screenline
 "colorscheme default
 highlight Comment ctermfg=green
 highlight Pmenu ctermbg=darkgray
@@ -70,9 +68,7 @@ highlight clear SpellBad
 highlight clear SpellCap
 highlight SpellBad cterm=underline
 highlight SpellCap cterm=underline
-highlight CursorLine cterm=None ctermbg=234
 
-"
 " show trailing whitespace
 " https://vim.fandom.com/wiki/Highlight_unwanted_spaces
 highlight ExtraWhitespace ctermbg=darkred
@@ -86,9 +82,6 @@ autocmd BufWinLeave * call clearmatches()
 if v:version > 800
     set signcolumn=yes
 endif
-
-" show if 'real' tabs are present
-"set list
 
 " jump to the last known cursor location when opening a file
 autocmd BufReadPost *
