@@ -3,6 +3,8 @@ vim.g.mapleader = " "
 -- Leader twice to toggle latest buffer.
 vim.keymap.set("n", "<leader><leader>", "<c-^>")
 
+vim.opt.signcolumn = "yes"
+
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
