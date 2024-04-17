@@ -54,7 +54,7 @@ set formatoptions+=n " support lists in formatting
 set path+=**
 
 set wildmenu
-set wildmode=list:longest
+set wildmode=list:full
 set wildignore=*.o,*.swp,*.mod
 
 " Color specifications
