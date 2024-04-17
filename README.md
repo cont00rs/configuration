@@ -1,5 +1,11 @@
 # Configuration files
 
+Prefetch scripts
+```sh
+./fetch.sh
+```
+
+Create symlinks
 ```sh
 stow -v . -t $HOME
 ```
@@ -12,3 +18,5 @@ stow -v . -t $HOME
   git clone --depth 1 https://github.com/wbthomason/packer.nvim\
    ~/.local/share/nvim/site/pack/packer/start/packer.nvim
   ```
+
+- Tree-sitter executable

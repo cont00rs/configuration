@@ -54,3 +54,6 @@ vim.api.nvim_create_autocmd(
 	group = "MyGroup"
 	}
 )
+
+-- How to define directly in lua?
+vim.cmd [[:command! -bar -nargs=* Jump cexpr system('git jump --stdout ' . expand(<q-args>)) ]]

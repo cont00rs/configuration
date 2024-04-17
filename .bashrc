@@ -20,5 +20,6 @@ alias gd='git diff'
 
 alias grep="grep --color"
 
+export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/.juliaup/bin
 export PATH="/usr/local/opt/llvm/bin:$PATH"
