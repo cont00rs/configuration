@@ -1,7 +1,7 @@
 [includeIf "gitdir:~/cont00rs/**"]
         path = ~/.config/git/cont00rs-github
 [core]
-        editor = vim
+        editor = nvim
 [init]
         defaultBranch = main
 [pull]

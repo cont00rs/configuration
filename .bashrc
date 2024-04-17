@@ -2,7 +2,7 @@ source /usr/local/etc/bash_completion.d/git-completion.bash
 source /usr/local/etc/bash_completion.d/git-prompt.sh
 
 export CLICOLOR=1
-export EDITOR='vim'
+export EDITOR='nvim'
 
 export PROMPT_DIRTRIM=2
 export GIT_PS1_SHOWDIRTYSTATE=1
