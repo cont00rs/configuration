@@ -12,10 +12,9 @@ return require('packer').startup(function(use)
         end
     })
 
-    use({
-        'junegunn/fzf',
-        run = "./install --bin"
-    })
+    use({'junegunn/fzf', run = "./install --bin"})
     use 'junegunn/fzf.vim'
+
+    use 'nvim-treesitter/nvim-treesitter'
 
 end)
