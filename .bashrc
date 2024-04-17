@@ -12,6 +12,8 @@ alias ll='ls -lh'
 alias la='ls -lah'
 alias lt='ls -latr'
 
+alias vim='nvim'
+
 alias gap='git add -p'
 alias gs='git status'
 alias gd='git diff'
