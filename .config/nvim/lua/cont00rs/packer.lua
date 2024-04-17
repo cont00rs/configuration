@@ -41,4 +41,6 @@ return require('packer').startup(function(use)
             {'L3MON4D3/LuaSnip'},
         }
     }
+
+    use 'tpope/vim-fugitive'
 end)
