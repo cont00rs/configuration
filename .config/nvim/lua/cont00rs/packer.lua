@@ -27,11 +27,9 @@ return require('packer').startup(function(use)
     use 'nvim-treesitter/nvim-treesitter'
 
     use {
-        'VonHeikemen/lsp-zero.nvim',
-        branch = 'v1.x',
+        'neovim/nvim-lspconfig',
         requires = {
             -- LSP Support
-            {'neovim/nvim-lspconfig'},
             {'williamboman/mason.nvim'},
             {'williamboman/mason-lspconfig.nvim'},
 
@@ -41,9 +39,6 @@ return require('packer').startup(function(use)
             {'hrsh7th/cmp-path'},
             {'hrsh7th/cmp-nvim-lsp'},
             {'hrsh7th/cmp-nvim-lua'},
-
-            -- Snippets
-            {'L3MON4D3/LuaSnip'},
         }
     }
 
