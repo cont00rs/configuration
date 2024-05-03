@@ -1,26 +1,27 @@
-function ApplyColors(color)
-    color = color or "rose-pine"
-    vim.cmd.colorscheme(color)
-
-    vim.opt.winhighlight = "Normal:Normal,NormaNC:Normal"
-    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-    vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
-    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-end
-
 return {
     {
-        "rose-pine/neovim",
-        name = "rose-pine",
+        "rebelot/kanagawa.nvim",
+        name = "kanagawa",
         config = function()
-            require('rose-pine').setup({
-                disable_background = true,
-                styles = { italic = false },
+            require("kanagawa").setup({
+                -- On the fence, but lets try slightly lighter background.
+                transparent = false,
+                compile = false,
+
+                -- Not a fan of different gutter colors, disabled.
+                colors = {
+                    theme = {
+                        all = {
+                            ui = {
+                                bg_gutter = "none"
+                            }
+                        }
+                    }
+                },
             })
 
-            vim.cmd("colorscheme rose-pine-main")
-            ApplyColors()
-
+            vim.cmd("colorscheme kanagawa-wave")
+            vim.cmd("echo \" \"")
         end
     },
 }
