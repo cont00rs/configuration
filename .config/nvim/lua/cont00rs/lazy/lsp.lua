@@ -1,5 +1,8 @@
 return {
     'neovim/nvim-lspconfig',
+
+    event = { "BufReadPre", "BufNewFile" },
+
     dependencies = {
         -- LSP Support
         {'williamboman/mason.nvim'},
@@ -10,7 +13,7 @@ return {
         {'hrsh7th/cmp-buffer'},
         {'hrsh7th/cmp-path'},
         {'hrsh7th/cmp-nvim-lsp'},
-        {'L3MON4D3/LuaSnip',},
+        {'L3MON4D3/LuaSnip'},
     },
 
     config = function()

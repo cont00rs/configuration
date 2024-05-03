@@ -1,6 +1,8 @@
 return {
     "nvim-orgmode/orgmode",
 
+    event = { "BufReadPre", "BufNewFile" },
+
     config = function()
         require('orgmode').setup({
             org_agenda_files = {'~/vimwiki/**/*.org'},

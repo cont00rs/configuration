@@ -3,6 +3,8 @@ return {
 
     branch = "harpoon2",
 
+    event = { "BufReadPre", "BufNewFile" },
+
     dependencies = {
         "nvim-lua/plenary.nvim"
     },
