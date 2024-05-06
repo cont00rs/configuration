@@ -8,6 +8,10 @@ return {
                 transparent = false,
                 compile = false,
 
+                commentStyle = { italic = false },
+                keywordStyle = { italic = false },
+                statementStyle = { italic = false },
+
                 -- Not a fan of different gutter colors, disabled.
                 colors = {
                     theme = {
