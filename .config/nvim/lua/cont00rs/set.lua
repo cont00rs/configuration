@@ -23,7 +23,7 @@ vim.opt.number = true
 vim.opt.path:append("**")
 
 vim.opt.wildmode = "list:longest"
-vim.opt.wildignore = "*o,*.swp,*.mod"
+vim.opt.wildignore = "*.o,*.swp,*.mod"
 
 -- Make trailing whitespaces explicit
 vim.opt.list = true
