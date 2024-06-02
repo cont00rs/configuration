@@ -23,3 +23,6 @@ alias grep="grep --color"
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/.juliaup/bin
 export PATH="/usr/local/opt/llvm/bin:$PATH"
+
+# Enable fzf integration for Bash.
+eval "$(fzf --bash)"

@@ -20,3 +20,4 @@ stow -v . -t $HOME
   ```
 
 - Tree-sitter executable
+- Fuzzy finder [`fzf`](https://github.com/junegunn/fzf)
