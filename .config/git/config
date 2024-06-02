@@ -6,3 +6,5 @@
         defaultBranch = main
 [pull]
         rebase = true
+[alias]
+        fixup = !git log --oneline | fzf | cut -d' ' -f1 | xargs -I{} git commit --fixup={}
