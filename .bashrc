@@ -26,3 +26,5 @@ export PATH="/usr/local/opt/llvm/bin:$PATH"
 
 # Enable fzf integration for Bash.
 eval "$(fzf --bash)"
+
+source ~/.local/bin/fzf-git.sh
