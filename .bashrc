@@ -28,3 +28,6 @@ export PATH="/usr/local/opt/llvm/bin:$PATH"
 eval "$(fzf --bash)"
 
 source ~/.local/bin/fzf-git.sh
+
+# Enable rustup.
+test -f "$HOME/.cargo/env" && source "$HOME/.cargo/env"
