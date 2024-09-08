@@ -69,11 +69,5 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end
 })
 
--- Center after jumping
-vim.keymap.set("n", "<C-d>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
-vim.keymap.set("n", "n", "nzzzv")
-vim.keymap.set("n", "N", "Nzzzv")
-
 -- How to define directly in lua?
 vim.cmd [[:command! -bar -nargs=* Jump cexpr system('git jump --stdout ' . expand(<q-args>)) ]]
