@@ -5,15 +5,15 @@ return {
 
     dependencies = {
         -- LSP Support
-        {'williamboman/mason.nvim'},
-        {'williamboman/mason-lspconfig.nvim'},
+        { 'williamboman/mason.nvim' },
+        { 'williamboman/mason-lspconfig.nvim' },
 
         -- Autocompletion
-        {'hrsh7th/nvim-cmp'},
-        {'hrsh7th/cmp-buffer'},
-        {'hrsh7th/cmp-path'},
-        {'hrsh7th/cmp-nvim-lsp'},
-        {'L3MON4D3/LuaSnip'},
+        { 'hrsh7th/nvim-cmp' },
+        { 'hrsh7th/cmp-buffer' },
+        { 'hrsh7th/cmp-path' },
+        { 'hrsh7th/cmp-nvim-lsp' },
+        { 'L3MON4D3/LuaSnip' },
     },
 
     config = function()
@@ -25,7 +25,10 @@ return {
             cmp_lsp.default_capabilities()
         )
 
-        require("mason").setup()
+        require("mason").setup({
+            -- PATH = "append",
+        })
+
         require("mason-lspconfig").setup({
             ensure_installed = {
             },
@@ -53,8 +56,18 @@ return {
             }
         })
 
+        require("lspconfig").rust_analyzer.setup({
+            settings = {
+                ["rust_analyzer"] = {
+                    cargo = {
+                        allFeatures = true,
+                    },
+                },
+            }
+        })
+
         local cmp = require("cmp")
-        local cmp_select = {behavior = cmp.SelectBehavior.Select}
+        local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
         cmp.setup({
             snippet = {
