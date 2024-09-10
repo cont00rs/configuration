@@ -1,31 +1,15 @@
 return {
     {
-        "rebelot/kanagawa.nvim",
-        name = "kanagawa",
+        "folke/tokyonight.nvim",
+        lazy = false,
+        priority = 1000,
+
         config = function()
-            require("kanagawa").setup({
-                -- On the fence, but lets try slightly lighter background.
-                transparent = false,
-                compile = false,
-
-                commentStyle = { italic = false },
-                keywordStyle = { italic = false },
-                statementStyle = { italic = false },
-
-                -- Not a fan of different gutter colors, disabled.
-                colors = {
-                    theme = {
-                        all = {
-                            ui = {
-                                bg_gutter = "none"
-                            }
-                        }
-                    }
-                },
+            require("tokyonight").setup({
+                style = "night",
             })
-
-            vim.cmd("colorscheme kanagawa-wave")
+            vim.cmd("colorscheme tokyonight")
             vim.cmd("echo \" \"")
         end
-    },
+    }
 }
