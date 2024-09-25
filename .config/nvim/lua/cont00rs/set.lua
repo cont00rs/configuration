@@ -18,7 +18,9 @@ vim.opt.relativenumber = true
 vim.opt.number = true
 
 -- These seem no longer needed.
--- vim.opt.formatoptions:append("n")
+vim.api.nvim_create_autocmd("FileType", {
+    callback = function() vim.opt_local.formatoptions:remove({ "o", "r" }) end,
+})
 
 vim.opt.path:append("**")
 
