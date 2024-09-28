@@ -31,3 +31,5 @@ source ~/.local/bin/fzf-git.sh
 
 # Enable rustup.
 test -f "$HOME/.cargo/env" && source "$HOME/.cargo/env"
+
+[ -f "/Users/max/.ghcup/env" ] && . "/Users/max/.ghcup/env" # ghcup-env
